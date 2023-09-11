@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cursor"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:background="@drawable/round"
+        android:outlineSpotShadowColor="#00FFFFFF"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="120px">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cursor" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/cursor"-->
+    <!--        android:layout_width="140px"-->
+    <!--        android:layout_height="140px"-->
+    <!--        android:background="@drawable/round"-->
+    <!--        android:scaleType="centerInside"-->
+    <!--        android:src="@drawable/cursor" />-->
+
+</RelativeLayout>
